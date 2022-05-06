@@ -19,6 +19,6 @@ public interface OrderApi {
      * @param request 买家购买单种商品
      * @return 订单 ID
      */
-    @PostMapping(value = "/v1/order/create")
+    @PostMapping(value = "/v2/order/create")
     JsonResult<OrderVO> create(CreateOrderRequest request);
 }

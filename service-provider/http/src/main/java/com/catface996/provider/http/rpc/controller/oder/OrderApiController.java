@@ -28,7 +28,7 @@ public class OrderApiController implements OrderApi {
         log.info("create order request:{}", request);
         OrderVO vo = new OrderVO();
         vo.setOrderId(1234567890L);
-        vo.setMemo("V1版本，开业第一单，普天同庆");
+        vo.setMemo("V2开业第一单，普天同庆");
         return JsonResult.success(vo);
     }
 }

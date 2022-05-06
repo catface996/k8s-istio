@@ -5,7 +5,7 @@
   <parent>
     <artifactId>service-consumer</artifactId>
     <groupId>com.catface996.consumer</groupId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
   </parent>
   <artifactId>consumer-integration</artifactId>
   <modelVersion>4.0.0</modelVersion>
@@ -22,6 +22,7 @@
     <dependency>
       <groupId>com.catface996.provider</groupId>
       <artifactId>provider-api</artifactId>
+      <version>0.0.2-SNAPSHOT</version>
     </dependency>
   </dependencies>
 

@@ -1,6 +1,9 @@
 package com.catface996.provider.api.order.request;
 
-import javax.validation.constraints.Min;
+
+import java.util.List;
+
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 import io.swagger.annotations.ApiModel;
@@ -15,16 +18,11 @@ import lombok.Data;
 @ApiModel(description = "创建订单请求")
 public class CreateOrderRequest {
 
-    @ApiModelProperty(value = "商品 ID",required = true,example = "123232323")
-    @NotNull(message = "商品 ID 不能为空")
-    private Long productId;
-
     @ApiModelProperty(value = "买家 ID",required = true,example = "909090")
     @NotNull(message = "买家 ID 不能为空")
     private Long buyerId;
 
-    @ApiModelProperty(value = "购买数量",required = true,example = "3")
-    @NotNull(message = "商品数量不能为空")
-    @Min(value = 1,message = "至少购买1 件")
-    private Integer nums;
+    @NotEmpty(message = "购买的商品种类不能为空")
+    private List<ProductRequest> products;
+
 }
