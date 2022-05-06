@@ -1,7 +1,7 @@
-FROM zlyxzq/centos7:v1
+FROM catface996/centos7-with-tools:v2
 VOLUME /tmp
 WORKDIR /app
-COPY /target/example-app.jar /root/app/example-app.jar
+COPY /target/consumer-app.jar /root/app/example-app.jar
 
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
