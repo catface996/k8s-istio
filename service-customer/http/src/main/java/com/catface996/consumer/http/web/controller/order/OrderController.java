@@ -5,6 +5,7 @@ import javax.validation.Valid;
 import com.catface996.common.model.JsonResult;
 import com.catface996.consumer.integration.provider.ProviderOrderService;
 import com.catface996.consumer.http.web.controller.order.request.SubmitOrderRequest;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2022/5/6 13:48 catface996 出品
  */
 @Slf4j
+@Api(tags = "V1 版本的订单 API")
 @RestController
 public class OrderController {
 
