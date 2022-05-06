@@ -30,7 +30,7 @@ public class ProviderOrderService {
      * @param nums      购买数量
      * @return 订单 ID
      */
-    public Long createOrder(Long buyerId, Long productId, Integer nums) {
+    public String createOrder(Long buyerId, Long productId, Integer nums) {
         CreateOrderRequest request = new CreateOrderRequest();
         request.setBuyerId(buyerId);
         request.setProductId(productId);
@@ -38,6 +38,6 @@ public class ProviderOrderService {
         JsonResult<OrderVO> jsonResult = orderApi.create(request);
         log.info("create order response:{}", jsonResult);
         Assert.state(jsonResult.getSuccess(), jsonResult.getMessage());
-        return jsonResult.getData().getOrderId();
+        return jsonResult.getData().getMemo();
     }
 }
