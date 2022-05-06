@@ -1,0 +1,54 @@
+## 通用配置
+spring:
+  profiles:
+    active: local
+  application:
+    name: consumer
+  # 关闭的缓冲时间3分钟
+  lifecycle:
+    timeout-per-shutdown-phase: 180s
+
+server:
+  port: 9001
+  shutdown: graceful
+
+http:
+  config:
+    log-enable: true
+logback:
+  home: /var/service/logs
+
+---
+#时间格式反序列化
+spring:
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+
+---
+## 本地环境配置
+spring:
+  profiles: local
+logback:
+  home: ./logs
+
+---
+## dev 环境配置
+spring:
+  profiles: dev
+---
+## test 环境配置
+spring:
+  profiles: test
+---
+## uat 环境配置
+spring:
+  profiles: uat
+---
+## gray 环境配置
+spring:
+  profiles: gray
+---
+## prod 环境配置
+spring:
+  profiles: prod

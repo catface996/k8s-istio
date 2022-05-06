@@ -1,0 +1,7 @@
+${AnsiColor.BRIGHT_YELLOW}
+${AnsiColor.RED}                ,--.   ,---.                      ,---.  ,---.   ,--.
+${AnsiColor.BRIGHT_YELLOW} ,---. ,--,--.,-'  '-./  .-' ,--,--. ,---. ,---. | o   \| o   \ /  .'
+${AnsiColor.GREEN}| .--'' ,-.  |'-.  .-'|  `-,' ,-.  || .--'| .-. :`..'  |`..'  ||  .-.
+${AnsiColor.BLUE}\ `--.\ '-'  |  |  |  |  .-'\ '-'  |\ `--.\   --. .'  /  .'  / \   o |
+${AnsiColor.MAGENTA} `---' `--`--'  `--'  `--'   `--`--' `---' `----' `--'   `--'   `---'
+${AnsiColor.WHITE}
